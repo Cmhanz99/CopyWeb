@@ -9,7 +9,7 @@ const Whats = () => {
       </div>
       <div className="mt-10 w-[80%] p-5 shadow bg-slate-100 rounded text-center">
         <p className="leading-loose">
-          Ainexus is a small team of four people, consisting of two Japanese and
+          A inexus is a small team of four people, consisting of two Japanese and
           two engineers from the Philippines. Based in Cebu, Philippines, we
           have different cultural and linguistic backgrounds, but we use English
           as our common language and work on projects by leveraging each other's
@@ -35,7 +35,7 @@ const Whats = () => {
         </p>
       </div>
       <div className="w-full  p-20 flex items-center justify-center">
-        <div className="flex items-center w-[80%] sm:w-[60%] md:w-[30%] justify-between">
+        <div className="flex items-center w-[100%] sm:w-[60%] md:w-[30%] justify-between">
             <i className="fa-brands fa-facebook text-blue-500 text-5xl cursor-pointer"></i>
             <i className="fa-brands fa-instagram text-5xl cursor-pointer"></i>
             <i className="fa-brands fa-line text-5xl text-green-500 cursor-pointer"></i>
