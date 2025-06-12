@@ -51,6 +51,7 @@ const Workflow = () => {
     <div
       className="min-h-screen w-full bg-cover bg-center bg-fixed py-16 px-4"
       style={{ backgroundImage: `url(${bgImage})` }}
+      id="workflow"
     >
       <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-60"></div>
       <div className="max-w-4xl mx-auto">
@@ -67,7 +68,7 @@ const Workflow = () => {
         {/* Timeline Container */}
         <div className="relative">
           {/* Central Timeline Line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-slate-500"></div>
+          <div className=" md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-slate-500"></div>
 
           {steps.map((step, index) => (
             <div
@@ -75,12 +76,12 @@ const Workflow = () => {
               className="relative flex items-center mb-16 last:mb-0"
             >
               {/* Timeline Dot */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-slate-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+              <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-slate-500 rounded-full border-4 border-white shadow-lg z-10"></div>
 
               {/* Step Card - Left Side */}
               {step.side === "left" && (
                 <>
-                  <div className="w-1/2 pr-8">
+                  <div className="md:w-1/2 pr-8">
                     <motion.div
                       initial={{ x: -100, opacity: 0, filter: "blur(8px)" }}
                       whileInView={{ x: 0, opacity: 1, filter: "blur(0px)" }}
@@ -103,7 +104,7 @@ const Workflow = () => {
                   <div className="w-1/2"></div>
 
                   {/* Horizontal Line to Timeline */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2">
+                  <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2">
                     <div className="w-8 h-0.5 bg-blue-500 -ml-8"></div>
                   </div>
                 </>
@@ -113,7 +114,7 @@ const Workflow = () => {
               {step.side === "right" && (
                 <>
                   <div className="w-1/2"></div>
-                  <div className="w-1/2 pl-8">
+                  <div className="md:w-1/2 pl-8">
                     <motion.div
                       initial={{ x: 100, opacity: 0, filter: "blur(8px)" }}
                       whileInView={{ x: 0, opacity: 1, filter: "blur(0px)" }}
@@ -135,7 +136,7 @@ const Workflow = () => {
                   </div>
 
                   {/* Horizontal Line to Timeline */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2">
+                  <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2">
                     <div className="w-8 h-0.5 bg-blue-500 ml-0"></div>
                   </div>
                 </>

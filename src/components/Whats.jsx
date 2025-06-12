@@ -35,7 +35,7 @@ const Whats = () => {
         </p>
       </div>
       <div className="w-full  p-20 flex items-center justify-center">
-        <div className="flex items-cente w-[30%] justify-between">
+        <div className="flex items-center w-[80%] sm:w-[60%] md:w-[30%] justify-between">
             <i className="fa-brands fa-facebook text-blue-500 text-5xl cursor-pointer"></i>
             <i className="fa-brands fa-instagram text-5xl cursor-pointer"></i>
             <i className="fa-brands fa-line text-5xl text-green-500 cursor-pointer"></i>

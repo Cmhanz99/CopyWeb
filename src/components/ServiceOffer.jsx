@@ -9,7 +9,7 @@ const ServiceOffer = () => {
       <div className="absolute -right-50 -bottom-50">
         <img src={bgImage} alt="" />
       </div>
-      <div className="flex flex-col w-[80%] min-h-screen">
+      <div className="flex flex-col w-[95%] sm:w-[90%] md:w-[80%] min-h-screen">
         <div className="flex flex-col mt-16">
           <motion.h2
             initial={{ opacity: 0, x: 30 }}
@@ -29,7 +29,7 @@ const ServiceOffer = () => {
             — Here to serve you better! —
           </motion.p>
         </div>
-        <div className="flex-1 grid grid-cols-1 md:grid-cols-4 p-2 mt-16 gap-2">
+        <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-2 mt-16 gap-2">
           <ServiceCard
             title="HP production/editing"
             description="A completely original website production service that turns your ideas

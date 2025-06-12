@@ -58,7 +58,7 @@ const Members = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen bg-slate-50 py-16">
+    <div className="w-full min-h-screen bg-slate-50 py-16" id="members">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header Section */}
         <div className="text-center mb-12">

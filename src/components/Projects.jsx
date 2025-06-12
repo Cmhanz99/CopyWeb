@@ -12,6 +12,7 @@ const Projects = () => {
     <div
       className="w-full min-h-100 bg-cover bg-fixed backdrop-blur-sm relative"
       style={{ backgroundImage: `url(${bgImage})` }}
+      id="projects"
     >
       <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-60"></div>
 

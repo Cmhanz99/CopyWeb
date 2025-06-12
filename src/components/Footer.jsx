@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="w-full bg-black flex flex-col items-center justify-center">
-      <div className="w-[70%] grid grid-cols-2 py-10">
+      <div className="w-[95%] sm:w-[80%] md:w-[70%] grid grid-cols-1 md:grid-cols-2 gap-4 py-10">
         <div className="flex flex-col items-start ml-5">
           <h2 className="text-5xl text-white">I-Nexus</h2>
           <div className="flex items-center mt-5 w-[70%] justify-between">
@@ -13,7 +13,7 @@ const Footer = () => {
             <i className="fa-brands fa-x-twitter text-white text-5xl cursor-pointer"></i>
           </div>
         </div>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2">
           <div className="flex flex-col p-4 gap-1">
             <a href="#" className="text-white font-medium">Home</a>
             <a href="#" className="text-white font-medium">Service</a>

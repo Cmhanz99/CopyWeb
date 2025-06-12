@@ -7,6 +7,7 @@ const Services = () => {
     <div
       className="w-full min-h-screen bg-fixed bg-cover bg-center relative"
       style={{ backgroundImage: `url(${bgImage})` }}
+      id="services"
     >
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-60" />
