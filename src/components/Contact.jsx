@@ -8,7 +8,7 @@ const Contact = () => {
         items-center justify-center flex-col"
       >
         <h2 className="text-4xl sm:text-5xl md:text-7xl font-medium text-slate-100">Contact</h2>
-        <p className="mt-5 text-white text-2xl">Please feel free to contact us first</p>
+        <p className="mt-5 text-white text-2xl text-center">Please feel free to contact us first</p>
       </div>
     </div>
   );
