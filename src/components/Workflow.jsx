@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import bgImage from "/src/assets/bg-1.jpg";
 
 const Workflow = () => {
   const steps = [
@@ -49,7 +50,7 @@ const Workflow = () => {
   return (
     <div
       className="min-h-screen w-full bg-cover bg-center bg-fixed py-16 px-4"
-      style={{ backgroundImage: "url('/src/assets/bg-1.jpg')" }}
+      style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-60"></div>
       <div className="max-w-4xl mx-auto">

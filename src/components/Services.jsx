@@ -1,24 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
+import bgImage from "/src/assets/japan2.jpg";
 
 const Services = () => {
   return (
     <div
       className="w-full min-h-screen bg-fixed bg-cover bg-center relative"
-      style={{ backgroundImage: "url('/src/assets/japan2.jpg')" }}
+      style={{ backgroundImage: `url(${bgImage})` }}
     >
       {/* Background Overlay */}
-      <div
-        className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-60"
-      />
-      
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-60" />
+
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/20" />
-      
+
       {/* Main Content Container */}
       <div className="relative z-20 flex items-center justify-center min-h-screen py-20 px-4">
         <div className="max-w-6xl mx-auto w-full">
-          
           {/* Header Section */}
           <div className="text-center mb-16">
             <motion.div
@@ -31,7 +29,7 @@ const Services = () => {
                 Our Services
               </span>
             </motion.div>
-            
+
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -40,7 +38,7 @@ const Services = () => {
             >
               We're I-Nexus
             </motion.h1>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -53,7 +51,6 @@ const Services = () => {
 
           {/* Services Grid */}
           <div className="grid md:grid-cols-3 gap-8 mb-16">
-            
             {/* Basic Plan */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -162,7 +159,6 @@ const Services = () => {
               「細部までこだわった本格的なWebサイトを作りたい」
             </p>
           </motion.div>
-          
         </div>
       </div>
     </div>

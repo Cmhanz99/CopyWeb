@@ -1,12 +1,13 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
 import { motion } from "framer-motion";
+import bgImage from "/src/assets/overlay2.png";
 
 const ServiceOffer = () => {
   return (
     <div className="w-full min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute -right-50 -bottom-50">
-        <img src="/src/assets/overlay2.png" alt="" />
+        <img src={bgImage} alt="" />
       </div>
       <div className="flex flex-col w-[80%] min-h-screen">
         <div className="flex flex-col mt-16">

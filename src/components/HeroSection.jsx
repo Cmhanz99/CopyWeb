@@ -1,10 +1,11 @@
 import React from "react";
+import bgImage from "/src/assets/bg-1.jpg";
 
 const HeroSection = () => {
   return (
     <div
       className="w-full h-screen bg-slate-900 bg-cover bg-fixed flex items-center justify-center"
-      style={{ backgroundImage: "url('/src/assets/bg-1.jpg')" }}
+      style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className="absolute inset-0 z-1 bg-gradient-to-t from-black via-transparent to-black opacity-60"></div>
       <div className="w-[90%] h-[90%] flex items-center justify-center flex-col z-1">

@@ -1,11 +1,12 @@
 import React from "react";
+import bgImage from "/src/assets/bg-5.jpg";
 
 const HeroPhases = () => {
   return (
     <div className="w-full h-screen flex items-center justify-center">
       <div
         className="w-full h-[80%] bg-slate-500 bg-cover bg-center flex flex-col items-center bg-fixed"
-        style={{ backgroundImage: "url('/src/assets/bg-5.jpg')" }}
+        style={{ backgroundImage: `url(${bgImage})` }}
       >
         <h2
           className="text-white text-center text-6xl font-semibold
