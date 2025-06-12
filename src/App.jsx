@@ -12,7 +12,6 @@ import HeroPhases from "./components/HeroPhases";
 import Whats from "./components/Whats";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import NavMobile from "./components/NavMobile";
 
 function App() {
   return (
